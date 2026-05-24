@@ -17,12 +17,13 @@ local cfg = {
 }
 local hl, holding = {}, false
 
+-- ĐÃ ĐỔI TÊN PANEL THÀNH MPHAT Ở ĐÂY RỒI NHA BẠN
 local Window = OrionLib:MakeWindow({
-    Name = "Rivals Premium Hub", 
+    Name = "MPHAT PANEL", 
     HidePremium = false, 
     SaveConfig = true, 
-    ConfigFolder = "RivalsOrionConfig",
-    IntroText = "Loading Rivals Project..."
+    ConfigFolder = "MPhatConfig",
+    IntroText = "Loading MPHAT Project..."
 })
 
 local CombatTab = Window:MakeTab({Name = "Combat (Aim)", Icon = "rbxassetid://4483345998"})
@@ -88,14 +89,6 @@ local function getTargetPart(pl)
     if p and p:IsA("BasePart") then return p end
     return pl.Character:FindFirstChild("HumanoidRootPart")
 end
-
-
-
-
-
-
-
-
 
 local function getClosest()
     local center = Vector2.new(Cam.ViewportSize.X / 2, Cam.ViewportSize.Y / 2)
