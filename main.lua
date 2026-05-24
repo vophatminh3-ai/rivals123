@@ -17,17 +17,19 @@ local cfg = {
 }
 local hl, holding = {}, false
 
--- ĐÃ ĐỔI TÊN PANEL THÀNH MPHAT Ở ĐÂY RỒI NHA BẠN
 local Window = OrionLib:MakeWindow({
     Name = "MPHAT PANEL", 
     HidePremium = false, 
     SaveConfig = true, 
     ConfigFolder = "MPhatConfig",
-    IntroText = "Loading MPHAT Project..."
+    IntroText = "Make by MINHPHAT"
 })
 
 local CombatTab = Window:MakeTab({Name = "Combat (Aim)", Icon = "rbxassetid://4483345998"})
 local VisualTab = Window:MakeTab({Name = "Visuals (ESP)", Icon = "rbxassetid://4483345998"})
+
+CombatTab:AddLabel("--- Make by MINHPHAT ---")
+VisualTab:AddLabel("--- Make by MINHPHAT ---")
 
 CombatTab:AddToggle({
     Name = "Bật/Tắt Aimbot (Giữ chuột trái)",
